@@ -33,7 +33,7 @@
         android:layout_height="52dp"
         android:layout_below="@+id/imgLogo"
         android:layout_marginTop="8dp"
-        android:src="@drawable/alc_text" />
+        android:src="@drawable/clc_text" />
 
 
     <LinearLayout
@@ -89,6 +89,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="I accept"
+                android:textColor="@color/white"
+                android:buttonTint="@color/white"
                 android:textSize="12sp" />
 
             <com.drkeironbrown.clc.custom.TfTextView
@@ -98,7 +100,7 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="4dp"
                 android:text="term and condition"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="12sp" />
         </LinearLayout>
 
@@ -111,10 +113,12 @@
             android:orientation="horizontal">
 
             <CheckBox
+                android:buttonTint="@color/white"
                 android:id="@+id/cbGetMail2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@color/white"
                 android:text="Get the latest update and notification"
                 android:textSize="12sp" />
 
@@ -126,7 +130,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="Read more"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="12sp"
                 app:isBold="true" />
         </LinearLayout>
@@ -140,7 +144,7 @@
             android:layout_marginTop="16dp"
             android:background="@drawable/brown_btn_selector"
             android:text="SIGN Up"
-            android:textColor="@color/white" />
+            android:textColor="@color/black" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -153,7 +157,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Already have an account ?"
-                android:textColor="@color/black" />
+                android:textColor="@color/white" />
 
             <com.drkeironbrown.clc.custom.TfTextView
                 android:id="@+id/txtSignIn"
@@ -161,7 +165,7 @@
                 android:layout_height="wrap_content"
                 android:padding="@dimen/padding_8"
                 android:text="Sign In"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -179,7 +183,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="© 2018-2019"
-            android:textColor="@color/black" />
+            android:textColor="@color/white" />
 
         <com.drkeironbrown.clc.custom.TfTextView
             android:id="@+id/txtDr"
@@ -187,7 +191,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="4dp"
             android:text="Dr. Keiron Brown"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textStyle="bold" />
 
     </LinearLayout>

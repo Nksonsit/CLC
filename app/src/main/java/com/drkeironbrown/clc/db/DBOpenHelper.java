@@ -30,7 +30,7 @@ public class DBOpenHelper extends SQLiteOpenHelper {
     public static final String DB_NAME = "LifeCoach.db";
     public static final int DB_VERSION = 1;
     private static DBOpenHelper instance;
-    public static final String DATABASE_PATH = Environment.getDataDirectory() + "/data/com.drkeironbrown.lifecoach/databases/";
+    public static final String DATABASE_PATH = Environment.getDataDirectory() + "/data/com.drkeironbrown.clc/databases/";
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 
     public static DBOpenHelper getInstance(Context context) {

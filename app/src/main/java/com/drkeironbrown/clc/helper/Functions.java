@@ -535,7 +535,7 @@ public class Functions {
         long time = System.currentTimeMillis();
         for (int i = 0; i < list.size(); i++) {
             try {
-                File mainDir = new File(Environment.getExternalStorageDirectory(), "/LifeCoach");
+                File mainDir = new File(Environment.getExternalStorageDirectory(), "/CristianLifeCoach");
                 if (!mainDir.exists()) {
                     mainDir.mkdir();
                 }
@@ -574,7 +574,7 @@ public class Functions {
     public static String copyAudioFile(File file) {
         File newfile = null;
         try {
-            File mainDir = new File(Environment.getExternalStorageDirectory(), "/LifeCoach");
+            File mainDir = new File(Environment.getExternalStorageDirectory(), "/CristianLifeCoach");
             if (!mainDir.exists()) {
                 mainDir.mkdir();
             }
@@ -617,7 +617,7 @@ public class Functions {
     public static void executeLogcat(Context context) {
         Log.d("System out", "Create Log file..");
         if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED))
-            cacheDir = new File(Environment.getExternalStorageDirectory(), "ActiveLifeCoachLogs");
+            cacheDir = new File(Environment.getExternalStorageDirectory(), "CristianLifeCoachLogs");
         else
             cacheDir = context.getCacheDir();
         if (!cacheDir.exists())
@@ -693,7 +693,7 @@ public class Functions {
 
         for (String path : filesToSend) {
             File file = new File(path);
-            Uri uri = FileProvider.getUriForFile(context, "com.drkeironbrown.lifecoach.fileProvider", file);
+            Uri uri = FileProvider.getUriForFile(context, "com.drkeironbrown.clc.fileProvider", file);
             files.add(uri);
         }
 

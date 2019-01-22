@@ -27,7 +27,7 @@ public class NotificationScheduler {
     @RequiresApi(api = Build.VERSION_CODES.O)
     public static void showNotificationOreo(Context context, Class<?> cls, String title, String content, boolean isMsg) {
         NotificationManager notificationManager = (NotificationManager) context.getSystemService(NOTIFICATION_SERVICE);
-        String id = "LifeCoach";
+        String id = "CristianLifeCoach";
         @SuppressLint("WrongConstant") NotificationChannel mChannel = new NotificationChannel(id, title, NotificationManager.IMPORTANCE_MAX);
         mChannel.setDescription(content);
         mChannel.enableLights(true);
@@ -88,7 +88,7 @@ public class NotificationScheduler {
     public static void showNotificationOreo(Context context, Class<?> cls, String title, String content, int id, boolean isGallery) {
 
         NotificationManager notificationManager = (NotificationManager) context.getSystemService(NOTIFICATION_SERVICE);
-        String idd = "LifeCoach";
+        String idd = "CristianLifeCoach";
         @SuppressLint("WrongConstant") NotificationChannel mChannel = new NotificationChannel(idd, title, NotificationManager.IMPORTANCE_MAX);
         mChannel.setDescription(content);
         mChannel.enableLights(true);
