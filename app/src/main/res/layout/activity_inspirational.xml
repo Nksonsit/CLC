@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.InspirationalActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_action_back" />
+
+        <com.drkeironbrown.clc.custom.TfTextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Life coach"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:isBold="true" />
+    </RelativeLayout>
+
+    <com.drkeironbrown.clc.custom.TfTextView
+        android:id="@+id/txtText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:layout_centerInParent="true"
+        android:text="Inspirational Messages help to keep you motivated and on track to your success. Now click on setting button so you will be redirected to the “Settings” menu so that you can set the time when you want Inspirational Messages sent to you."
+        android:textColor="@color/darkColor" />
+
+    <ImageView
+        android:id="@+id/imgSetting"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:src="@drawable/ic_settings"
+        android:tint="@color/colorPrimaryDark"
+        android:layout_below="@+id/txtText"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_bg">
+
+    <ImageView
+        android:id="@+id/imgCategory"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/category" />
+
+    <com.drkeironbrown.clc.custom.TfTextView
+        android:id="@+id/txtCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgCategory"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Category"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:isBold="true" />
+
+    <com.drkeironbrown.clc.custom.TfTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCategory"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:padding="@dimen/padding_8"
+        android:text="Choose from an array of common issues and obstacles to progress and receive help and guidance to get you past them and put you on the road to your success!"
+        android:textColor="@color/off_white"
+        android:textSize="16sp" />
+</RelativeLayout>

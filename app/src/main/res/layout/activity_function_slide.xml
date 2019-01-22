@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.FunctionSlideActivity">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/txtNext"
+        android:background="@color/off_white" />
+
+    <com.drkeironbrown.clc.custom.TfTextView
+        android:id="@+id/txtNext"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_42"
+        android:layout_above="@+id/rrBottom"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:paddingRight="32dp"
+        android:text="Next"
+        android:textColor="@color/off_white"
+        android:textSize="@dimen/text_size_14" />
+
+    <com.drkeironbrown.clc.custom.TfTextView
+        android:id="@+id/txtPre"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_42"
+        android:layout_above="@+id/rrBottom"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:paddingLeft="32dp"
+        android:text="Previous"
+        android:textColor="@color/off_white"
+        android:textSize="@dimen/text_size_14" />
+
+    <RelativeLayout
+        android:id="@+id/rrBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:id="@+id/bottomSpace"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+    </RelativeLayout>
+
+    <com.drkeironbrown.clc.custom.TfTextView
+        android:id="@+id/txtSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_42"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/skip_bg"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="Skip"
+        android:textColor="@color/off_white"
+        android:textSize="@dimen/text_size_14" />
+</RelativeLayout>

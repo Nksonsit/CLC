@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/rlAddImage"
+        android:layout_width="102dp"
+        android:layout_height="102dp">
+
+        <ImageView
+            android:id="@+id/imgAdd"
+            android:layout_width="102dp"
+            android:layout_height="102dp"
+            android:layout_margin="@dimen/margin_8"
+            android:background="@drawable/dotted_box"
+            android:padding="24dp"
+            android:tint="@color/black"
+            android:src="@drawable/add" />
+    </RelativeLayout>
+</RelativeLayout>
