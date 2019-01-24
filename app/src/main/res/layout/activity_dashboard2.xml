@@ -83,30 +83,46 @@
                         android:textColor="@color/white" />
                 </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/llShop"
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="@color/colorPrimary2"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="@dimen/padding_8">
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+
+                    <LinearLayout
+                        android:id="@+id/llSpecificItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary2"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_8">
+
+                        <ImageView
+                            android:layout_width="52dp"
+                            android:layout_height="52dp"
+                            android:padding="4dp"
+                            android:src="@drawable/quote"
+                            android:tint="@color/white" />
+
+                        <com.drkeironbrown.clc.custom.TfTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Specific Needs"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
 
                     <ImageView
-                        android:layout_width="52dp"
-                        android:layout_height="52dp"
-                        android:layout_marginBottom="@dimen/margin_8"
-                        android:src="@drawable/shop"
-                        android:tint="@color/white" />
+                        android:id="@+id/imgSpecificItem"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_paid" />
+                </RelativeLayout>
 
-                    <com.drkeironbrown.clc.custom.TfTextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Shop"
-                        android:textColor="@color/white" />
-                </LinearLayout>
 
             </LinearLayout>
 
@@ -356,46 +372,31 @@
                         android:textColor="@color/white" />
                 </LinearLayout>
 
-                <RelativeLayout
+
+                <LinearLayout
+                    android:id="@+id/llShop"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:background="@color/colorPrimary7">
-
-
-                    <LinearLayout
-                        android:id="@+id/llSpecificItem"
-                        android:layout_width="match_parent"
-                        android:layout_height="130dp"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:background="@color/colorPrimary10"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:padding="@dimen/padding_8">
-
-                        <ImageView
-                            android:layout_width="52dp"
-                            android:layout_height="52dp"
-                            android:padding="4dp"
-                            android:src="@drawable/quote"
-                            android:tint="@color/white" />
-
-                        <com.drkeironbrown.clc.custom.TfTextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="Specific Needs"
-                            android:textColor="@color/white" />
-                    </LinearLayout>
+                    android:background="@color/colorPrimary10"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_8">
 
                     <ImageView
-                        android:id="@+id/imgSpecificItem"
-                        android:layout_width="42dp"
-                        android:layout_height="42dp"
-                        android:layout_centerInParent="true"
-                        android:src="@drawable/ic_paid" />
-                </RelativeLayout>
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:layout_marginBottom="@dimen/margin_8"
+                        android:src="@drawable/shop"
+                        android:tint="@color/white" />
+
+                    <com.drkeironbrown.clc.custom.TfTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shop"
+                        android:textColor="@color/white" />
+                </LinearLayout>
 
             </LinearLayout>
 
