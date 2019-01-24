@@ -190,7 +190,7 @@ public class Dashboard2Activity extends AppCompatActivity implements Configurati
             @Override
             public void onClick(View v) {
                 if (!isSpecificItemPaid) {
-                    Functions.showAlertDialogWithTwoOption(Dashboard2Activity.this, "OK", "", "Text for specific item", new PopupDialog.OnPopupClick() {
+                    Functions.showAlertDialogWithTwoOption(Dashboard2Activity.this, "OK", "", "God's Word for specific needs", new PopupDialog.OnPopupClick() {
                         @Override
                         public void onOkClick() {
                             Functions.fireIntent(Dashboard2Activity.this, SpecificItemsActivity.class, true);
