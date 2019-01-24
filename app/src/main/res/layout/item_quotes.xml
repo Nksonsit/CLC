@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.drkeironbrown.clc.custom.TfTextView
+        android:id="@+id/txtQuotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quotes"
+        android:padding="@dimen/padding_8"
+        android:textColor="@color/darkColor"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>

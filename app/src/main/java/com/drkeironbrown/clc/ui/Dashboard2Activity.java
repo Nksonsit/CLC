@@ -95,10 +95,13 @@ public class Dashboard2Activity extends AppCompatActivity implements Configurati
     private boolean isGalleryPaid = true;
     private boolean isSlideshowPaid = true;
     private boolean isJournalPaid = true;
+    private boolean isSpecificItemPaid = true;
     private int PaymentClickType = 0;
     private AlarmHelper alarmHelper;
     private LinearLayout llAboutUs;
     private ImageView imgPaidJournal;
+    private LinearLayout llSpecificItem;
+    private ImageView imgSpecificItem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -107,6 +110,7 @@ public class Dashboard2Activity extends AppCompatActivity implements Configurati
         PrefUtils.setIsFirstTime(this, false);
         //Functions.executeLogcat(this);
         txtTitle = (TfTextView) findViewById(R.id.txtTitle);
+        this.imgSpecificItem = (ImageView) findViewById(R.id.imgSpecificItem);
         this.imgPaidSlideshow = (ImageView) findViewById(R.id.imgPaidSlideshow);
         this.imgPaidGallery = (ImageView) findViewById(R.id.imgPaidGallery);
         this.imgPaidJournal = (ImageView) findViewById(R.id.imgPaidJournal);
@@ -123,6 +127,7 @@ public class Dashboard2Activity extends AppCompatActivity implements Configurati
         this.toolbar = (LinearLayout) findViewById(R.id.toolbar);
         this.llRef = (LinearLayout) findViewById(R.id.llRef);
         this.llAboutUs = (LinearLayout) findViewById(R.id.llAboutUs);
+        this.llSpecificItem = (LinearLayout) findViewById(R.id.llSpecificItem);
         handler = new Handler();
         llCategory.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -152,6 +157,43 @@ public class Dashboard2Activity extends AppCompatActivity implements Configurati
                         @Override
                         public void onOkClick() {
                             Functions.fireIntent(Dashboard2Activity.this, SlideshowListActivity.class, true);
+                        }
+
+                        @Override
+                        public void onCancelClick() {
+
+                        }
+                    });
+
+                } else {
+                    Functions.showAlertDialogWithTwoOption(Dashboard2Activity.this, "Premium", "Not now", "Upgrade to Premium to access this feature!", new PopupDialog.OnPopupClick() {
+                        @Override
+                        public void onOkClick() {
+                            PaymentClickType = 2;
+                            //PayPal.requestOneTimePayment(mBraintreeFragment, new PayPalRequest("1"));
+                            Intent intent = new Intent(Dashboard2Activity.this, WebActivity.class);
+                            intent.putExtra("url", AppConstant.PAYMENT_LINK);
+
+                            startActivityForResult(intent, 1011);
+                        }
+
+                        @Override
+                        public void onCancelClick() {
+
+                        }
+                    });
+                }
+
+            }
+        });
+        llSpecificItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (!isSpecificItemPaid) {
+                    Functions.showAlertDialogWithTwoOption(Dashboard2Activity.this, "OK", "", "Text for specific item", new PopupDialog.OnPopupClick() {
+                        @Override
+                        public void onOkClick() {
+                            Functions.fireIntent(Dashboard2Activity.this, SpecificItemsActivity.class, true);
                         }
 
                         @Override
@@ -413,9 +455,11 @@ public class Dashboard2Activity extends AppCompatActivity implements Configurati
             imgPaidGallery.setVisibility(View.GONE);
             imgPaidSlideshow.setVisibility(View.GONE);
             imgPaidJournal.setVisibility(View.GONE);
+            imgSpecificItem.setVisibility(View.GONE);
             isGalleryPaid = false;
             isSlideshowPaid = false;
             isJournalPaid = false;
+            isSpecificItemPaid = false;
         }
     }
 
@@ -556,9 +600,11 @@ public class Dashboard2Activity extends AppCompatActivity implements Configurati
             imgPaidGallery.setVisibility(View.GONE);
             imgPaidSlideshow.setVisibility(View.GONE);
             imgPaidJournal.setVisibility(View.GONE);
+            imgSpecificItem.setVisibility(View.GONE);
             isGalleryPaid = false;
             isSlideshowPaid = false;
             isJournalPaid = false;
+            isSpecificItemPaid = false;
         }
         if (PrefUtils.getUserFullProfileDetails(this).getIsFullPay() == 0) {
             /*PaidProductReq paidProductReq = new PaidProductReq();

@@ -535,7 +535,7 @@ public class Functions {
         long time = System.currentTimeMillis();
         for (int i = 0; i < list.size(); i++) {
             try {
-                File mainDir = new File(Environment.getExternalStorageDirectory(), "/CristianLifeCoach");
+                File mainDir = new File(Environment.getExternalStorageDirectory(), "/ChristianLifeCoach");
                 if (!mainDir.exists()) {
                     mainDir.mkdir();
                 }
@@ -574,7 +574,7 @@ public class Functions {
     public static String copyAudioFile(File file) {
         File newfile = null;
         try {
-            File mainDir = new File(Environment.getExternalStorageDirectory(), "/CristianLifeCoach");
+            File mainDir = new File(Environment.getExternalStorageDirectory(), "/ChristianLifeCoach");
             if (!mainDir.exists()) {
                 mainDir.mkdir();
             }
@@ -617,7 +617,7 @@ public class Functions {
     public static void executeLogcat(Context context) {
         Log.d("System out", "Create Log file..");
         if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED))
-            cacheDir = new File(Environment.getExternalStorageDirectory(), "CristianLifeCoachLogs");
+            cacheDir = new File(Environment.getExternalStorageDirectory(), "ChristianLifeCoachLogs");
         else
             cacheDir = context.getCacheDir();
         if (!cacheDir.exists())
@@ -674,7 +674,7 @@ public class Functions {
     }
 
     public static void shareSimpleText(Context context, String text) {
-        text = "Cristian Life Coach \n\n" + text;
+        text = "Christian Life Coach \n\n" + text;
         Intent sendIntent = new Intent();
         sendIntent.setAction(Intent.ACTION_SEND);
         sendIntent.putExtra(Intent.EXTRA_TEXT, text);
@@ -683,7 +683,7 @@ public class Functions {
     }
 
     public static void shareImages(Context context, String subject, List<String> filesToSend) {
-        subject = "Cristian Life Coach \n\n" + subject;
+        subject = "Christian Life Coach \n\n" + subject;
         Intent intent = new Intent();
         intent.setAction(Intent.ACTION_SEND_MULTIPLE);
         intent.putExtra(Intent.EXTRA_SUBJECT, subject);

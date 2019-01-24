@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/colorPrimary12"
+    android:orientation="vertical"
     tools:context=".ui.Dashboard2Activity">
 
     <LinearLayout
@@ -116,10 +116,10 @@
                 android:orientation="horizontal">
 
                 <RelativeLayout
-                    android:background="@color/colorPrimary3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary3">
 
                     <LinearLayout
                         android:id="@+id/llGallery"
@@ -159,11 +159,11 @@
                     android:layout_weight="1">
 
                     <LinearLayout
-                        android:background="@color/colorPrimary4"
                         android:id="@+id/llSlideshow"
                         android:layout_width="match_parent"
                         android:layout_height="130dp"
                         android:layout_gravity="center"
+                        android:background="@color/colorPrimary4"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:padding="@dimen/padding_8">
@@ -199,12 +199,12 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:background="@color/colorPrimary5"
                     android:id="@+id/llInspirational"
                     android:layout_width="match_parent"
                     android:layout_height="130dp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:background="@color/colorPrimary5"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="@dimen/padding_8">
@@ -258,10 +258,10 @@
 
 
                 <RelativeLayout
-                    android:background="@color/colorPrimary7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary7">
 
 
                     <LinearLayout
@@ -298,12 +298,12 @@
 
 
                 <LinearLayout
-                    android:background="@color/colorPrimary8"
                     android:id="@+id/llSecondThought"
                     android:layout_width="match_parent"
                     android:layout_height="130dp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:background="@color/colorPrimary8"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="@dimen/padding_8">
@@ -331,12 +331,12 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:background="@color/colorPrimary9"
                     android:id="@+id/llSettings"
                     android:layout_width="match_parent"
                     android:layout_height="130dp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:background="@color/colorPrimary9"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="@dimen/padding_8">
@@ -356,48 +356,63 @@
                         android:textColor="@color/white" />
                 </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/llLogout"
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:gravity="center"
-                    android:background="@color/colorPrimary10"
-                    android:orientation="vertical"
-                    android:padding="@dimen/padding_8">
+                    android:background="@color/colorPrimary7">
+
+
+                    <LinearLayout
+                        android:id="@+id/llSpecificItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary10"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_8">
+
+                        <ImageView
+                            android:layout_width="52dp"
+                            android:layout_height="52dp"
+                            android:padding="4dp"
+                            android:src="@drawable/quote"
+                            android:tint="@color/white" />
+
+                        <com.drkeironbrown.clc.custom.TfTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Specific Items"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
 
                     <ImageView
-                        android:layout_width="52dp"
-                        android:layout_height="52dp"
-                        android:padding="4dp"
-                        android:src="@drawable/ic_logout"
-                        android:tint="@color/white" />
-
-                    <com.drkeironbrown.clc.custom.TfTextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="Logout"
-                        android:textColor="@color/white" />
-                </LinearLayout>
+                        android:id="@+id/imgSpecificItem"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_paid" />
+                </RelativeLayout>
 
             </LinearLayout>
 
             <LinearLayout
-                android:background="@color/colorPrimary12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/colorPrimary12"
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:background="@color/colorPrimary11"
                     android:id="@+id/llAboutUs"
                     android:layout_width="match_parent"
                     android:layout_height="130dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="1dp"
                     android:layout_weight="1"
+                    android:background="@color/colorPrimary11"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="@dimen/padding_8">
@@ -417,12 +432,12 @@
 
                 <LinearLayout
                     android:id="@+id/llRef"
-                    android:background="@color/colorPrimary12"
                     android:layout_width="match_parent"
                     android:layout_height="130dp"
                     android:layout_gravity="center"
                     android:layout_marginRight="1dp"
                     android:layout_weight="1"
+                    android:background="@color/colorPrimary12"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="@dimen/padding_8">
@@ -440,6 +455,54 @@
                         android:text="Bibliography"
                         android:textColor="@color/white" />
                 </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/llLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary9"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_8">
+
+                    <ImageView
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:padding="4dp"
+                        android:src="@drawable/ic_logout"
+                        android:tint="@color/white" />
+
+                    <com.drkeironbrown.clc.custom.TfTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Logout"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary10"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_8">
+
+                </LinearLayout>
+
 
             </LinearLayout>
 

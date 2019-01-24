@@ -1,23 +1,48 @@
 package com.drkeironbrown.clc.ui;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
+import com.braintreepayments.api.dropin.BaseActivity;
 import com.drkeironbrown.clc.R;
+import com.drkeironbrown.clc.adapter.TopicsAdapter;
+import com.drkeironbrown.clc.custom.TfTextView;
+import com.drkeironbrown.clc.helper.Functions;
 import com.drkeironbrown.clc.model.Quotes;
 import com.drkeironbrown.clc.model.SpecificItem;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class TempActivity extends AppCompatActivity {
+public class SpecificItemsActivity extends BaseActivity {
+
+    private android.widget.ImageView imgBack;
+    private com.drkeironbrown.clc.custom.TfTextView txtTitle;
+    private android.widget.RelativeLayout toolbar;
+    private android.support.v7.widget.RecyclerView rvTopics;
+    private List<SpecificItem> sItems;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.item_add_personal_inspirational);
+        setContentView(R.layout.activity_specific_items);
+        this.rvTopics = (RecyclerView) findViewById(R.id.rvTopics);
+        this.toolbar = (RelativeLayout) findViewById(R.id.toolbar);
+        this.txtTitle = (TfTextView) findViewById(R.id.txtTitle);
+        this.imgBack = (ImageView) findViewById(R.id.imgBack);
 
-        List<SpecificItem> sItems = new ArrayList<>();
+        imgBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
+        sItems = new ArrayList<>();
 
         SpecificItem specificItem = new SpecificItem();
         List<Quotes> quotesList = new ArrayList<>();
@@ -189,10 +214,13 @@ public class TempActivity extends AppCompatActivity {
         sItems.add(specificItem13);
 
 
-
-
+        rvTopics.setLayoutManager(new LinearLayoutManager(this));
+        rvTopics.setAdapter(new TopicsAdapter(this, sItems));
 
     }
 
-
+    @Override
+    public void onBackPressed() {
+        Functions.fireIntent(this, false);
+    }
 }

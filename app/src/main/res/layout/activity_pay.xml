@@ -18,7 +18,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
         android:padding="@dimen/padding_8"
-        android:text="Enjoy the Free version of Cristian Life Coach to see how this tool can help you live a better life!"
+        android:text="Enjoy the Free version of Christian Life Coach to see how this tool can help you live a better life!"
         android:textColor="@color/off_white"
         android:textSize="16sp" />
 
