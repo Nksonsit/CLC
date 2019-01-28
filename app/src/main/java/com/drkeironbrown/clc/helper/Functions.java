@@ -46,6 +46,7 @@ import com.bumptech.glide.request.target.Target;
 import com.drkeironbrown.clc.R;
 import com.drkeironbrown.clc.custom.MDToast;
 import com.drkeironbrown.clc.custom.PopupDialog;
+import com.drkeironbrown.clc.db.DBOpenHelper;
 import com.drkeironbrown.clc.model.Image;
 
 import java.io.File;
@@ -748,4 +749,26 @@ public class Functions {
             e.printStackTrace();
         }
     }
+
+    public static void extractDB() throws IOException  {
+
+        String inFileName = DBOpenHelper.DATABASE_PATH + DBOpenHelper.DB_NAME;
+        InputStream myInput = new FileInputStream(inFileName);
+        File root = new File(Environment.getExternalStorageDirectory(), "alc");
+        if (!root.exists()) {
+            root.mkdirs();
+        }
+        OutputStream myOutput = new FileOutputStream(new File(root, DBOpenHelper.DB_NAME));
+        byte[] buffer = new byte[1024];
+        int length;
+
+        while ((length = myInput.read(buffer)) > 0) {
+            myOutput.write(buffer, 0, length);
+        }
+
+        myOutput.flush();
+        myOutput.close();
+        myInput.close();
+    }
+
 }

@@ -1,5 +1,6 @@
 package com.drkeironbrown.clc.ui;
 
+import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -35,7 +36,11 @@ import com.drkeironbrown.clc.helper.AppConstant;
 import com.drkeironbrown.clc.helper.Functions;
 import com.drkeironbrown.clc.helper.PrefUtils;
 import com.drkeironbrown.clc.payment.WebActivity;
+import com.gun0912.tedpermission.PermissionListener;
+import com.gun0912.tedpermission.TedPermission;
 
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Random;
 
 public class Dashboard2Activity extends AppCompatActivity implements ConfigurationListener,

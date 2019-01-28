@@ -11,6 +11,7 @@ import com.braintreepayments.api.dropin.BaseActivity;
 import com.drkeironbrown.clc.R;
 import com.drkeironbrown.clc.adapter.TopicsAdapter;
 import com.drkeironbrown.clc.custom.TfTextView;
+import com.drkeironbrown.clc.db.DBOpenHelper;
 import com.drkeironbrown.clc.helper.Functions;
 import com.drkeironbrown.clc.model.Quotes;
 import com.drkeironbrown.clc.model.SpecificItem;
@@ -212,14 +213,6 @@ public class SpecificItemsActivity extends BaseActivity {
         quotesList13.add(new Quotes("God is our refuge and strength, always ready to help in times of trouble.  So we will not fear, even if earthquakes come and the mountains crumble into the sea. – Ps 46:1-2"));
         specificItem13.setQuotes(quotesList13);
         sItems.add(specificItem13);
-
-
-
-
-
-
-
-
 
         SpecificItem specificItem14 = new SpecificItem();
         List<Quotes> quotesList14 = new ArrayList<>();
@@ -429,9 +422,164 @@ public class SpecificItemsActivity extends BaseActivity {
         List<Quotes> quotesList30 = new ArrayList<>();
         specificItem30.setTopic("Forgiveness");
         quotesList30.add(new Quotes("The Lord is slow to anger and rich in unfailing love, forgiving every kind of sin and rebellion.  Even so he does not leave sin unpunished, but he punishes the children for the sins of their parents to the third and fourth generation. – Num 14:18"));
+        quotesList30.add(new Quotes("Then if my people who are called by my name will humble themselves and pray and seek my face and turn from their wicked ways, I will hear from heaven and will forgive their sins and heal their lands. – 2 Chron 7:14"));
+        quotesList30.add(new Quotes("When I refused to confess my sin, I was weak and miserable, and I groaned all day long.  Day and night your hand of discipline was heavy on me.  My strength evaporated like water in the summer heat.  Finally, I confessed all my sins to you and stopped trying to hide them.  I said to myself, 'I will confess my rebellion to the Lord.' And you forgave me!  All my guilt is gone. – Ps 32:3-5"));
+        quotesList30.add(new Quotes("The sacrifice you want is a broken spirit.  A broken and repentant heart, O God, you will not despise. – Ps 51:17"));
+        quotesList30.add(new Quotes("O Lord, you are so good, so ready to forgive, so full of unfailing love for all who ask your aid. – Ps 86:5"));
+        quotesList30.add(new Quotes("He has not punished us for all our sins, nor does he deal with us as we deserve.  For his unfailing love toward those who fear him is as great as the height of the heavens above the earth.  He has removed our rebellious acts as far away from us as the east is from the west. – Ps 103:10-12"));
+        quotesList30.add(new Quotes("No matter how deep the stain of your sins, I can remove it.  I can make you as clean as freshly fallen snow.  Even if you are stained as red as crimson, I can make you as white as wool. – Isa 1:18"));
+        quotesList30.add(new Quotes("I – yes, I alone – am the one who blots out your sin for my own sake and will never think of them again. – Isa 43:25"));
+        quotesList30.add(new Quotes("Anyone who calls on the name of the Lord will be saved. – Joel 2:32"));
+        quotesList30.add(new Quotes("If you forgive those who sin against you, your heavenly Father will forgive you.  But if you refuse to forgive others, your Father will not forgive your sins. – Matt 6:14-15"));
+        quotesList30.add(new Quotes("…for this is my blood, which seals the covenant between God and his people.  It is poured out to forgive the sins of many. – Matt 26:28"));
+        quotesList30.add(new Quotes("I assure you that any sin can be forgiven, including blasphemy; but anyone who blasphemes against the Holy Spirit will never be forgiven.  It is an eternal sin. – Mark 3:28-29"));
+        quotesList30.add(new Quotes("There is forgiveness of sins for all who turn to me. – Luke 24:47"));
+        quotesList30.add(new Quotes("For all have sinned; all fall short of God's glorious standard.  Yet now God in his gracious kindness declares us not guilty.  He has done this through Christ Jesus, who has freed us by taking away our sins. – Rom 3:23-24"));
+        quotesList30.add(new Quotes("You must make allowances for each other's faults and forgive the person who offends you.  Remember, the Lord forgave you, so you must forgive others. – Col 3:13"));
+        quotesList30.add(new Quotes("Finally, all of you should be of one mind, full of sympathy toward each other, loving one another with tender hearts and humble minds.  Don't repay evil for evil.  Don't retaliate when people say unkind things about you.  Instead, pay them back with a blessing.  That is what God wants you to do, and he will bless you for it. – 1 Pet 3:8-9"));
         specificItem30.setQuotes(quotesList30);
         sItems.add(specificItem30);
 
+
+        SpecificItem specificItem31 = new SpecificItem();
+        List<Quotes> quotesList31 = new ArrayList<>();
+        specificItem31.setTopic("Guilt");
+        quotesList31.add(new Quotes("Purify me from my sins, and I will be clean; wash me, and I will be whiter than snow. – Ps 51:7"));
+        quotesList31.add(new Quotes("Everyone who believes in him is freed from all guilt and declared right with God – something the Jewish law could never do. – Acts 13:39"));
+        specificItem31.setQuotes(quotesList31);
+        sItems.add(specificItem31);
+
+        SpecificItem specificItem32 = new SpecificItem();
+        List<Quotes> quotesList32 = new ArrayList<>();
+        specificItem32.setTopic("Hope");
+        quotesList32.add(new Quotes("When doubts filled my mind, your comfort gave me renewed hope and cheer. – Ps 94:19"));
+        quotesList32.add(new Quotes("O Israel, hope in the Lord; for with the Lord there is unfailing love and an overflowing supply of salvation. – Ps 130:7"));
+        quotesList32.add(new Quotes("You will keep in perfect peace all who trust in you, whose thoughts are fixed on you! – Isa 26:3"));
+        quotesList32.add(new Quotes("The Lord is wonderfully good to those who wait for him and seek him. – Lam 3:25"));
+        quotesList32.add(new Quotes("Don't be troubled.  You trust God, now trust in me.  There are many rooms in my Father's home, and I am going to prepare a place for you.  If this were not so, I would tell you plainly.  When everything is ready, I will come and get you, so that you will always be with me where I am. – John 14:1-3"));
+        quotesList32.add(new Quotes("So I pray that God, who gives you hope, will keep you happy and full of peace as you believe in him.  May you overflow with hope through the power of the Holy Spirit. – Rom 15:13"));
+        quotesList32.add(new Quotes("Now glory be to God!  By his mighty power at work within us, he is able to accomplish infinitely more than we could ever dare to ask or hope. – Eph 3:20"));
+        quotesList32.add(new Quotes("Without wavering, let us hold tightly to the hope we say we have, for God can be trusted to keep his promise. – Heb 10:23"));
+        quotesList32.add(new Quotes("Through Christ you have come to trust in God.  And because God raised Christ from the dead and gave him great glory, your faith and hope can be placed confidently in God. – 1 Pet 1:21"));
+        specificItem32.setQuotes(quotesList32);
+        sItems.add(specificItem32);
+
+        SpecificItem specificItem33 = new SpecificItem();
+        List<Quotes> quotesList33 = new ArrayList<>();
+        specificItem33.setTopic("Humility");
+        quotesList33.add(new Quotes("You rescue those who are humble, but your eyes on the proud to humiliate them. – 2 Sam 22:28"));
+        quotesList33.add(new Quotes("He leads the humble in what is right, teaching them his way. – Ps 25:9"));
+        quotesList33.add(new Quotes("Though the Lord is great, he cares for the humble, but he keeps his distance from the proud. – Ps 138:6"));
+        quotesList33.add(new Quotes("For the Lord delights in his people; he crowns the humble with salvation. – Ps 149:4"));
+        quotesList33.add(new Quotes("The humble will be filled with fresh joy from the Lord.  Those who are poor will rejoice in the Holy One of Israel. – Isa 29:19"));
+        quotesList33.add(new Quotes("The high and lofty one who inhabits eternity, the Holy One, says this: 'I live in that high and holy place with those whose spirits are contrite and humble.  I refresh the humble and give new courage to those with repentant hearts.' – Isa 57:15"));
+        quotesList33.add(new Quotes("Therefore, anyone who becomes as humble as this little child is the greatest in the Kingdom of Heaven. – Matt 18:4"));
+        quotesList33.add(new Quotes("But those who exalt themselves will be humbled, and those who humble themselves will be exalted. – Matt 23:12"));
+        quotesList33.add(new Quotes("…For the proud will be humbled, but the humbled will be honored. – Luke 18:14"));
+        quotesList33.add(new Quotes("He gives us more and more strength to stand against such evil desires.  As the Scriptures say, 'God sets himself against the proud, but he shows favor to the humble.  So humble yourselves before God.  Resist the Devil, and he will flee from you.  Draw close to God, and God will draw close to you.  Wash your hands, you sinners, purify your hearts, you hypocrites.  Let there be tears for the wrong things you have done.  Let there be sorrow and deep grief.  Let there be sadness instead of laughter, and gloom instead of joy.  When you bow down before the Lord and admit your dependence on him, he will lift you up and give you honor. – James 4:6-10"));
+        quotesList33.add(new Quotes("You younger men, accept the authority of the elders.  And all of you, serve each other in humility for 'God sets himself against the proud, but he shows favor to the humble.  So humble yourselves under the mighty power of God, and in his good time he will honor you. – 1 Pet 5:5-6"));
+        specificItem33.setQuotes(quotesList33);
+        sItems.add(specificItem33);
+
+        SpecificItem specificItem34 = new SpecificItem();
+        List<Quotes> quotesList34 = new ArrayList<>();
+        specificItem34.setTopic("Insecurity");
+        quotesList34.add(new Quotes("For the Lord your God has arrived to live among you.  He is a mighty savior.  He will rejoice over you with great gladness.  With his love, he will calm all your fears.  He will exult over you by singing a happy song. – Zeph 3:17"));
+        quotesList34.add(new Quotes("So you should not be like cowering, fearful slaves.  You should behave instead like God's very own children, adopted into his family – calling him 'Father, dear Father.'  For his Holy Spirit speaks to us deep in our hearts and tells us that we are God's children.  And since we are his children, we will share in his treasures – for everything God gives his Son, Christ, is ours, too.  But if we are to share his glory, we must also share his suffering. – Rom 8:15-17"));
+        specificItem34.setQuotes(quotesList34);
+        sItems.add(specificItem34);
+
+        SpecificItem specificItem35 = new SpecificItem();
+        List<Quotes> quotesList35 = new ArrayList<>();
+        specificItem35.setTopic("Integrity");
+        quotesList35.add(new Quotes("A man who makes a vow to the Lord or makes a pledge under oath must never break it.  He must do exactly what he said he would do. – Num 30:2"));
+        quotesList35.add(new Quotes("Create in me a clean heart, O God.  Renew a right spirit within me.  Do no banish me from your presence, and don't take your Holy Spirit from me.  Restore to me again the joy of your salvation, and make me willing to obey you. – Ps 51:10-12"));
+        quotesList35.add(new Quotes("But if you fail to keep your word, then you will have sinned against the Lord, and you may be sure that your sin will find you out. – Num 32:23"));
+        quotesList35.add(new Quotes("When you make a vow to the Lord your God, be prompt in doing whatever you promised him.  For the Lord your God demands that you promptly fulfill all your vows.  If you don't, you will be guilty of sin. – Deut 23:21"));
+        quotesList35.add(new Quotes("But the leaders replied, 'We have sworn an oath in the presence of the Lord, the God of Israel.  We cannot touch them.  We must let them live, for God would be angry with us if we broke our oath.  Let them live.  But we will make them chop wood and carry the water for the entire community. – Josh 9:19-21"));
+        quotesList35.add(new Quotes("To the faithful you show yourself faithful; to those with integrity you show integrity. – 2 Sam 22:26"));
+        quotesList35.add(new Quotes("Do any of you want to live a life that is long and good?  Then watch your tongue!  Keep your lips from telling lies! – Ps 34:12-13"));
+        quotesList35.add(new Quotes("I will not allow deceivers to serve me, and liars will not be allowed to enter my presence. – Ps 101:7"));
+        quotesList35.add(new Quotes("Then you will understand what is right, just, and fair, and you will know how to find the right course of action every time. – Prov 2:9"));
+        quotesList35.add(new Quotes("So when you make a promise to God, don't delay in following through, for God takes no pleasure in fools.  Keep all the promises you make to him.  It is better to say nothing than to promise something that you don't follow through on. – Eccles 5:4-5"));
+        specificItem35.setQuotes(quotesList35);
+        sItems.add(specificItem35);
+
+        SpecificItem specificItem36 = new SpecificItem();
+        List<Quotes> quotesList36 = new ArrayList<>();
+        specificItem36.setTopic("Justice");
+        quotesList36.add(new Quotes("But it is wrong to say God doesn't listen, to say the Almighty isn't concerned.  And it is even more false to say he doesn't see what's going on.  He will bring about justice if you will only wait. – Job 35:13-14"));
+        quotesList36.add(new Quotes("Don't say, 'I will get even for this wrong.'  Wait for the Lord to handle the matter. – Prov 20:22"));
+        quotesList36.add(new Quotes("God blesses those who are hungry and thirsty for justice, for they will receive it in full. – Matt 5:6"));
+        quotesList36.add(new Quotes("Dear friends, never avenge yourselves.  Leave that to God.  For it is written, 'I will take vengeance; I will repay those who deserve it,' says the Lord.' – Rom 12:19"));
+        specificItem36.setQuotes(quotesList36);
+        sItems.add(specificItem36);
+
+        SpecificItem specificItem37 = new SpecificItem();
+        List<Quotes> quotesList37 = new ArrayList<>();
+        specificItem37.setTopic("Persistence");
+        quotesList37.add(new Quotes("And so I tell you, keep on asking, and you will be given what you ask for.  Keep on looking, and you will find.  Keep on knocking, and the door will be opened.  For everyone who asks, receives.  Everyone who seeks, finds.  And the door is opened to everyone who knocks. – Luke 11:9-10"));
+        quotesList37.add(new Quotes("He will give eternal life to those who persist in doing what is good, seeking after the glory and honor and immortality that God offers. – Rom 2:7"));
+        specificItem37.setQuotes(quotesList37);
+        sItems.add(specificItem37);
+
+        SpecificItem specificItem38 = new SpecificItem();
+        List<Quotes> quotesList38 = new ArrayList<>();
+        specificItem38.setTopic("Planning");
+        quotesList38.add(new Quotes("Wise planning will watch over you.  Understanding will keep you safe. – Prov 2:11"));
+        quotesList38.add(new Quotes("You can make many plans, but the Lord's purpose will prevail. – Prov 19:21"));
+        quotesList38.add(new Quotes("'For I know the plans I have for you,' says the Lord.  'They are plans for good and not for disaster, to give you a future and a hope. – Jer 29:11"));
+        specificItem38.setQuotes(quotesList38);
+        sItems.add(specificItem38);
+
+        SpecificItem specificItem39 = new SpecificItem();
+        List<Quotes> quotesList39 = new ArrayList<>();
+        specificItem39.setTopic("Problems");
+        quotesList39.add(new Quotes("The Lord is my light and my salvation – so why should I be afraid?  The Lord protects me from danger – so why should I tremble? – Ps 27:1"));
+        quotesList39.add(new Quotes("We are pressed on every side by trouble, but we are not crushed and broken.  We are perplexed, but we don't give up and quit.  We are hunted down, but God never abandons us.  We get knocked down, but we get up again and keep going. – 2 Cor 4:8-9"));
+        quotesList39.add(new Quotes("Share each other's troubles and problems, and in this way obey the law of Christ. – Gal 6:2"));
+        specificItem39.setQuotes(quotesList39);
+        sItems.add(specificItem39);
+
+        SpecificItem specificItem40 = new SpecificItem();
+        List<Quotes> quotesList40 = new ArrayList<>();
+        specificItem40.setTopic("Provision");
+        quotesList40.add(new Quotes("The Lord is my shepherd; I have everything I need. – Ps 23:1"));
+        quotesList40.add(new Quotes("Trust me in your times of trouble, and I will rescue you, and you will give me glory. – Ps 50:15"));
+        quotesList40.add(new Quotes("Then turning to his disciples, Jesus said, 'So I tell you, don't worry about everyday life – whether you have enough food and clothing.  Look at the ravens.  They don't need to plant or harvest or put food in barns because God feeds them.  And you are far more valuable to him than any birds!  Can all your worries add a single moment to your life?  Of course not!  And if worry can't do little things like that, what's the use of worrying over bigger things?"));
+        quotesList40.add(new Quotes("Look at the lilies and how they grow.  They don't work or make their clothing, yet Solomon on all his glory was not dressed as beautifully as they are.  And if God cares so wonderfully for flowers that are here today and gone tomorrow, won't he more surely care for you?  You have so little faith!  And don't worry about food – what to eat and drink.  Don't worry about whether God will provide it for you.  These things dominate the thoughts of most people, but your Father already knows your needs.  He will give you all you need from day to day if you make the Kingdom of God your primary concern. – Luke 12: 22-31"));
+        quotesList40.add(new Quotes("Yes, I am the gate.  Those who come in through me will be saved.  Wherever they go, they will find green pastures.  The thief's purpose is to steal and kill and destroy.  My purpose is to give life in all its fullness. – John 10:9-10"));
+        quotesList40.add(new Quotes("But if you stay joined to me and my words remain in you, you may ask any request you like, and it will be granted!  My true disciples produce much fruit.  This brings great glory to my father. – John 15:7-8"));
+        quotesList40.add(new Quotes("Since God did not spare even his own Son but gave him up for us all, won't God, who gave us Christ, also give us everything else? – Rom 8:32"));
+        quotesList40.add(new Quotes("Now you have every spiritual gift you need as you eagerly wait for the return of our Lord Jesus Christ.  He will keep you strong right up to the end, and he will keep you free from all blame on the great day when our Lord Jesus Christ returns. – 1 Cor 1:7-8"));
+        quotesList40.add(new Quotes("And this same God who takes care of me will supply all your needs from his glorious riches, which have been given to us in Christ Jesus. – Phil 4:19"));
+        specificItem40.setQuotes(quotesList40);
+        sItems.add(specificItem40);
+
+        SpecificItem specificItem41 = new SpecificItem();
+        List<Quotes> quotesList41 = new ArrayList<>();
+        specificItem41.setTopic("Self-Control");
+        quotesList41.add(new Quotes("How can a young person stay pure?  By obeying your word and following its rules. – Ps 119:9"));
+        quotesList41.add(new Quotes("But remember that the temptations that come into your life are no different from what others experience.  And God is faithful.  He will keep the temptation from becoming so strong that you can't stand up against it.  When you are tempted, he will show you a way out so that you will not give in to it. – 1 Cor 10:13"));
+        quotesList41.add(new Quotes("Knowing God leads to self-control.  Self-control leads to patient endurance, and patient endurance leads to godliness. – 2 Pet 1:6"));
+        specificItem41.setQuotes(quotesList41);
+        sItems.add(specificItem41);
+
+        SpecificItem specificItem42 = new SpecificItem();
+        List<Quotes> quotesList42 = new ArrayList<>();
+        specificItem42.setTopic("Success");
+        quotesList42.add(new Quotes("The Lord your God will cleanse your heart and the hearts of all your descendants so that you will love him with all your heart and soul, and so you may live!  The Lord your god will inflict all these curses on your enemies and persecutors.  Then you will again obey the Lord and keep all the commands I am giving you today.  The Lord your God will make you successful in everything you do.  He will give you many children and numerous livestock, and your fields will produce abundant harvests, for the Lord will delight in being good to you as he as was to your ancestors. – Deut 30:6-9"));
+        quotesList42.add(new Quotes("They did not conquer the land with their swords; it was not their own strength that gave them victory.  It was by your mighty power that they succeeded; it was because you favored them and smiled on them.  You are my King and my God.  You command victories for your people.  Only by your power can we push back our enemies; only in your name can we trample our foes.  I do not trust my bow; I do not count on my sword to save me.  It is you who gives us victory over our enemies; it is you who humbles those who hate us.  O God, we give glory to you all day long and constantly praise your name. – Ps 44:3-8"));
+        quotesList42.add(new Quotes("Praise the Lord!  Happy are those who fear the Lord.  Yes, happy are those who delight in doing what he commands.  Their children will be successful everywhere; an entire generation of godly people will be blessed.  They themselves will be wealthy, and their good deeds will never be forgotten.  When darkness overtakes the godly, light will come bursting in.  They are generous, compassionate, and righteous. – Ps 112:1-4"));
+        quotesList42.add(new Quotes("Plans go wrong for lack of advice; many counselors bring success. – Prov 15:22"));
+        quotesList42.add(new Quotes("Commit your work to the Lord, and then your plans will succeed. – Prov 16:3"));
+        quotesList42.add(new Quotes("We can gather our thoughts, but the Lord gives the right answer.  People may be pure in their own eyes, but the Lord examines their motives. – Prov 16:1-2"));
+        quotesList42.add(new Quotes("The horses are prepared for battle, but the victory belongs to the Lord. – Prov 21:31"));
+        quotesList42.add(new Quotes("Good planning and hard work lead to prosperity, but hasty shortcuts lead to poverty. – Prov 21:5"));
+        quotesList42.add(new Quotes("We are confident of all this because of our great trust in God through Christ.  It is not that we think we can do anything of lasting value by ourselves.  Our only power and success come from God. – 2 Cor 3:4-5"));
+        quotesList42.add(new Quotes("As for me and my family, we will serve the Lord. – Josh 24:15"));
+        specificItem42.setQuotes(quotesList42);
+        sItems.add(specificItem42);
 
         rvTopics.setLayoutManager(new LinearLayoutManager(this));
         rvTopics.setAdapter(new TopicsAdapter(this, sItems));

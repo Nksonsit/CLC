@@ -378,6 +378,17 @@ public class DBOpenHelper extends SQLiteOpenHelper {
         return list;
     }
 
+    public static void addMessages(List<String> list) {
+        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+        for (int i = 0; i < list.size(); i++) {
+            Log.e("insert", i + "");
+            db.execSQL("INSERT INTO Inspirational(Inspirational) VALUES('" + list.get(i).replace(",", "&#44;").replace("'", "&#39;").replace("\"", "&#34;") + "')");
+        }
+        DatabaseManager.getInstance().closeDatabase();
+
+    }
+
+
     public static List<Image> getImagesFromGallery(int galleryId) {
         List<Image> list = new ArrayList<>();
         SQLiteDatabase sb = DatabaseManager.getInstance().openDatabase();
