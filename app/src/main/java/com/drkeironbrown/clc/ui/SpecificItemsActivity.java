@@ -187,15 +187,6 @@ public class SpecificItemsActivity extends BaseActivity {
         specificItem10.setQuotes(quotesList10);
         sItems.add(specificItem10);
 
-        SpecificItem specificItem11 = new SpecificItem();
-        List<Quotes> quotesList11 = new ArrayList<>();
-        specificItem11.setTopic("Productivity");
-        quotesList11.add(new Quotes("Teach us to make the most of our time, so that we may grow in wisdom. – Ps 90:12"));
-        quotesList11.add(new Quotes("So be careful how you live, not as fools but as those who are wise.  Make the most of every opportunity for doing good in these evil days.  Don't act thoughtlessly, but try to understand what the Lord wants you to do.  Don't be drunk with wine, because that will ruin your life.  Instead, let the Holy Spirit fill and control you.  Then you will sing psalms and hymns and spiritual songs among yourselves, making music to the Lord in your hearts.  And you will always give thanks for everything to God the Father in the name of our Lord Jesus Christ. – Eph 5:15-20"));
-        quotesList11.add(new Quotes("There is a time for everything, a season for every activity under heaven.  A time to be born and a time to die.  A time to plant and a time to harvest.  A time to kill and a time to heal.  A time to tear down and a time to rebuild.  A time to cry and a time to laugh.  A time to grieve and a time to dance.  A time to scatter stones and a time to gather stones.  A time to embrace and a time to turn away.  A time to search and a time to lose.  A time to keep and a time to throw away.  A time to tear and a time to mend.  A time to be quiet and a time to speak up.  A time to love and a time to hate.  A time for war and a time for peace.  What do people really get for all their hard work?  I have thought about this in connection with the various kinds of work God has given people to do.  God has made everything beautiful for its own time.  He has planted eternity in the human heart, but even so, people cannot see the whole scope of God's work from beginning to end. – Eccles 3:1-11"));
-        specificItem11.setQuotes(quotesList11);
-        sItems.add(specificItem11);
-
 
         SpecificItem specificItem12 = new SpecificItem();
         List<Quotes> quotesList12 = new ArrayList<>();
@@ -540,6 +531,16 @@ public class SpecificItemsActivity extends BaseActivity {
         quotesList39.add(new Quotes("Share each other's troubles and problems, and in this way obey the law of Christ. – Gal 6:2"));
         specificItem39.setQuotes(quotesList39);
         sItems.add(specificItem39);
+
+
+        SpecificItem specificItem11 = new SpecificItem();
+        List<Quotes> quotesList11 = new ArrayList<>();
+        specificItem11.setTopic("Productivity");
+        quotesList11.add(new Quotes("Teach us to make the most of our time, so that we may grow in wisdom. – Ps 90:12"));
+        quotesList11.add(new Quotes("So be careful how you live, not as fools but as those who are wise.  Make the most of every opportunity for doing good in these evil days.  Don't act thoughtlessly, but try to understand what the Lord wants you to do.  Don't be drunk with wine, because that will ruin your life.  Instead, let the Holy Spirit fill and control you.  Then you will sing psalms and hymns and spiritual songs among yourselves, making music to the Lord in your hearts.  And you will always give thanks for everything to God the Father in the name of our Lord Jesus Christ. – Eph 5:15-20"));
+        quotesList11.add(new Quotes("There is a time for everything, a season for every activity under heaven.  A time to be born and a time to die.  A time to plant and a time to harvest.  A time to kill and a time to heal.  A time to tear down and a time to rebuild.  A time to cry and a time to laugh.  A time to grieve and a time to dance.  A time to scatter stones and a time to gather stones.  A time to embrace and a time to turn away.  A time to search and a time to lose.  A time to keep and a time to throw away.  A time to tear and a time to mend.  A time to be quiet and a time to speak up.  A time to love and a time to hate.  A time for war and a time for peace.  What do people really get for all their hard work?  I have thought about this in connection with the various kinds of work God has given people to do.  God has made everything beautiful for its own time.  He has planted eternity in the human heart, but even so, people cannot see the whole scope of God's work from beginning to end. – Eccles 3:1-11"));
+        specificItem11.setQuotes(quotesList11);
+        sItems.add(specificItem11);
 
         SpecificItem specificItem40 = new SpecificItem();
         List<Quotes> quotesList40 = new ArrayList<>();
