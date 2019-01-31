@@ -39,7 +39,7 @@ public class ShopAdapter extends RecyclerView.Adapter<ShopAdapter.ShopVH> {
 
     @Override
     public void onBindViewHolder(@NonNull ShopVH holder, final int position) {
-        Glide.with(context).load("http://drkeironbrown.com/alc/admin/" + list.get(position).getShopImg()).into(holder.imgBook);
+        Glide.with(context).load("http://drkeironbrown.com/clc/admin/" + list.get(position).getShopImg()).into(holder.imgBook);
         holder.txtBookName.setText(Html.fromHtml(list.get(position).getShopName()));
         holder.txtBookPrice.setText("$" + list.get(position).getShopPrice());
         holder.btnBuy.setOnClickListener(new View.OnClickListener() {
