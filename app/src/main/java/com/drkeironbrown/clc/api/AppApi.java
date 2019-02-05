@@ -4,6 +4,7 @@ package com.drkeironbrown.clc.api;
 import com.drkeironbrown.clc.model.BaseResponse;
 import com.drkeironbrown.clc.model.Category;
 import com.drkeironbrown.clc.model.CategoryReq;
+import com.drkeironbrown.clc.model.ForgotPasswordReq;
 import com.drkeironbrown.clc.model.LoginReq;
 import com.drkeironbrown.clc.model.PaidProduct;
 import com.drkeironbrown.clc.model.PaidProductReq;
@@ -56,4 +57,7 @@ public interface AppApi {
 
     @POST("UpdateFullPay.php")
     Call<BaseResponse> updatePayment(@Body UpdateNotificationReq updateNotificationReq);
+
+    @POST("GetForgotPassword.php")
+    Call<BaseResponse> getForgotPassword(@Body ForgotPasswordReq forgotPasswordReq);
 }

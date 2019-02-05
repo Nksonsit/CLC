@@ -40,6 +40,7 @@ public class LoginActivity extends AppCompatActivity {
     private TfTextView txtDr;
     private TfTextView txtReadMore;
     private View bottomSpace;
+    private TfTextView txtForgotPass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +50,7 @@ public class LoginActivity extends AppCompatActivity {
         bottomSpace = findViewById(R.id.bottomSpace);
         this.txtReadMore = (TfTextView) findViewById(R.id.txtReadMore);
         this.txtSignUp = (TfTextView) findViewById(R.id.txtSignUp);
+        this.txtForgotPass = (TfTextView) findViewById(R.id.txtForgotPass);
         this.btnSignIn = (TfButton) findViewById(R.id.btnSignIn);
         this.cbGetMail2 = (CheckBox) findViewById(R.id.cbGetMail2);
         this.edtUserName = (TfEditText) findViewById(R.id.edtUserName);
@@ -109,6 +111,14 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Functions.hideKeyPad(LoginActivity.this, v);
                 Functions.fireIntent(LoginActivity.this, RegisterActivity.class, true);
+            }
+        });
+
+        txtForgotPass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Functions.hideKeyPad(LoginActivity.this, v);
+                Functions.fireIntent(LoginActivity.this, ForgotPasswordActivity.class, true);
             }
         });
 
