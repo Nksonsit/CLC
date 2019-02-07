@@ -584,7 +584,6 @@ public class SpecificItemsActivity extends BaseActivity {
 
         rvTopics.setLayoutManager(new LinearLayoutManager(this));
         rvTopics.setAdapter(new TopicsAdapter(this, sItems));
-
     }
 
     @Override
